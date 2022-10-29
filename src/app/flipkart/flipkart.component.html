@@ -1,0 +1,27 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> ID </th>
+            <th> Title </th>
+            <th> Price </th>
+            <th> Description </th>
+            <th> Category </th>
+            <th> Image </th>
+            <th> Rating </th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let flipkart of flipkarts">
+            <td>{{flipkart.id}}</td>
+            <td>{{flipkart.title}}</td>
+            <td>{{flipkart.price}}</td>
+            <td>{{flipkart.description}}</td>
+            <td>{{flipkart.category}}</td>
+            <td><img src="{{flipkart.image}}" width="100px" height="100px"></td>
+            <td>{{flipkart.rating.rate}} , {{flipkart.rating.count  }}</td>
+            
+        </tr>
+    </tbody>
+</table>
+

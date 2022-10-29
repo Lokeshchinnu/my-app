@@ -1,0 +1,13 @@
+<select [(ngModel)]="rating">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+</select>
+<img *ngIf="rating == 1" src="/assets/m1.jpg" alt="">
+<img *ngIf="rating == 2" src="/assets/m2.jpg" alt="">
+<img *ngIf="rating == 3" src="/assets/m3.jpg" alt="">
+<img *ngIf="rating == 4" src="/assets/m4.jpg" alt="">
+<img *ngIf="rating == 5" src="/assets/m5.jpg" alt="">
+

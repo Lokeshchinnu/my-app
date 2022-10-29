@@ -1,0 +1,14 @@
+.visited{
+    background-color: grey;
+}
+.unvisited{
+    background-color:rgb(233, 216, 216);
+}
+div:hover{
+    background-color: azure;
+    
+
+}
+.mail:hover{
+    box-shadow: 0px 0px 0px rgb(11, 11, 11);
+}

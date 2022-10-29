@@ -1,0 +1,22 @@
+
+<form [formGroup]="accountForm">
+<label for=""> Created At :</label>
+<input type="date" formControlName="createdAt">
+<br>
+<label for=""> Account Name :</label>
+<input type="text" formControlName="account_name">
+<br>
+<label for=""> Available Balance :</label>
+<input type="number" formControlName="available_balance">
+<br>
+<label for=""> Currency :</label>
+<input type="text" formControlName="currency">
+<br>
+<label for=""> Image :</label>
+<input type="text" formControlName="user_image">
+<br>
+<label for=""> Acount Number :</label>
+<input type="number" formControlName="account_number">
+<br>
+<button (click)="submit()"> Submit </button>
+</form>

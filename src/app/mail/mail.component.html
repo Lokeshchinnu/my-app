@@ -1,0 +1,6 @@
+<div *ngFor="let mail of mails" [ngClass]="{'visited': mail.completed==true, 'unvisited': mail.completed ==false}" [ngStyle]="{'font-weight': mail.completed==true? 100 :900}">
+    
+    <p>{{ mail.title}}</p>
+    
+</div>
+

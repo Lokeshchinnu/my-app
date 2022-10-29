@@ -1,0 +1,28 @@
+.parent{
+    height:100vh;
+    width: 100vw;
+    display: flex;
+}
+.d1{
+    height: 100%;
+    width: 20%;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    overflow: auto;
+}
+.d1 > h4{
+    cursor: pointer;
+}
+.d1>h4:hover{
+    background-color: rgb(86, 112, 134);
+
+}
+.d2{
+    height: 100%;
+    width: 80%;
+    background-color: aqua;
+    overflow: auto;
+    cursor: pointer;
+    text-align: center;
+}
