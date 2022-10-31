@@ -1,0 +1,36 @@
+<form [formGroup]="userForm">
+    <label> Name :</label>
+    <input type="text" formControlName="name">
+    <br>
+    <label > phone :</label>
+    <input type="number" formControlName="phone">
+    <br>
+    <label> DOB :</label>
+    <input type="date" formControlName="dob">
+    <br>
+    <h2> Address</h2>
+    <div formGroupName="address">
+        <label> City:</label>
+        <input type="text" formControlName="city">
+        <br>
+        <label> Pin: </label>
+        <input type="number" formControlName="pin">
+        <br>
+    </div>
+    <button (click)="add()">Add Card</button>
+
+    <div formArrayName="cards">
+        <div *ngFor="let card of cardsFormArray?.controls; let i=index">
+            <div formGroupName="{{i}}">
+                <input type="text" formControlName="name" placeholder="name">
+                <br>
+                <input type="text" formControlName="expiery" placeholder="expiery">
+                <br>
+                <input type="text" formControlName="cvv" placeholder="cvv">
+                <button (click)="delete(i)" class="btn btn-danger"> Delete</button><br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <button (click)="submit()"> Submit</button>
+</form>
